@@ -1,0 +1,103 @@
+/**************** 
+    VARIABLES
+*****************/
+    :root {
+        /* Colors */
+        --blue: #5175ff;
+        --btn-light-blue: #efeaff;
+        --btn-darker-light-blue: #d3dcff;
+        --light-blue: #829cff;
+        --grey: #747b95;
+        --medium-grey: #333950;
+        --dark-grey: #25293a;
+        --red: #f05b5b;
+    }
+
+
+
+
+
+/**************** 
+    RESET
+*****************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+/**************** 
+    MAIN
+*****************/
+body {
+    padding: 4rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+
+
+
+/**************** 
+    BUTTONS
+*****************/
+.btn {
+    border-radius:  30px;
+    border:         none;
+    cursor:         pointer;
+    display:        block;
+    font-family:    inherit;
+    font-size:      1.6rem;
+    outline:        none;
+    padding:        1.8rem 5.43rem;
+    text-align:     center;
+    transition:     all 0.3s;
+    white-space:    nowrap;
+    width:          17.1rem;
+    min-width:      17.1rem;
+}
+
+.btn--primary {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background-color: var(--light-blue);
+}
+
+.btn--secondary {
+    background-color: var(--btn-light-blue);
+    color: var(--blue);
+}
+
+.btn--secondary:hover {
+    background-color: var(--btn-darker-light-blue);
+}
+
+.btn--tertiary {
+    background-color: #fff;
+    color: var(--blue);
+}
+
+.btn--tertiary:hover {
+    color: var(--light-blue);
+}
+
+.btn--stretched {
+    width: 100%;
+}
