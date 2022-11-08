@@ -4,9 +4,9 @@
     :root {
         /* Colors */
         --blue: #5175ff;
-        --btn-light-blue: #efeaff;
-        --btn-darker-light-blue: #d3dcff;
         --light-blue: #829cff;
+        --btn-light-blue: #e4eaff;
+        --btn-darker-light-blue: #d3dcff;
         --grey: #747b95;
         --medium-grey: #333950;
         --dark-grey: #25293a;
@@ -32,8 +32,16 @@ html {
     font-size: 62.5%;
 }
 
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 
@@ -44,8 +52,9 @@ a {
     MAIN
 *****************/
 body {
-    padding: 4rem;
+    padding: 2.2rem;
     font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-grey);
 }
 
 
@@ -62,8 +71,9 @@ body {
     display:        block;
     font-family:    inherit;
     font-size:      1.6rem;
+    font-weight:    700;
     outline:        none;
-    padding:        1.8rem 5.43rem;
+    padding:        1.8rem;
     text-align:     center;
     transition:     all 0.3s;
     white-space:    nowrap;
@@ -100,4 +110,154 @@ body {
 
 .btn--stretched {
     width: 100%;
+}
+
+
+
+
+/**************** 
+    CARD
+*****************/
+.card {
+    border-radius:   10px;
+    display:         grid;
+    grid-auto-rows:  min-content;
+    height:          50.8rem;
+    margin:          0 auto;
+    max-width:       32.7rem;
+    text-align:      center;
+}
+
+.card--white {
+    background-color: #fff;
+}
+
+/* Card Blue */
+.card--blue {
+    background-color:        var(--blue);
+    background-image:        url(../assets/home/bg-pattern-pricing.svg);
+    background-position:     top 102% center;
+    background-repeat:       no-repeat;
+    background-size:         265%;
+    z-index:                 -10;
+}
+
+.card.card--blue .card__heading,
+.card.card--blue .card__price-container,
+.card.card--blue .card__benefits {
+    color: #fff;
+}
+
+
+/* Card Content */
+.card__heading {
+    margin-top: 4rem;
+    font-size: 2rem;
+    color: var(--medium-grey);
+}
+
+
+/* Card price container */
+.card__price-container {
+    color: var(--medium-grey);
+}
+
+.card__price {
+    font-size: 5.6rem;
+    margin-top: 4rem;
+    font-weight: 700;
+}
+
+.card__billing-cycle {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 0.6rem;
+}
+
+/* Card Benefits */
+.card__benefits {
+    color: var(--grey);
+    font-size: 1.6rem;
+    margin-top: 6.5rem;
+}
+
+.card__benefits :nth-child(2) {
+    margin-top: 2.4rem;
+}
+
+.card__benefits :nth-child(3) {
+    margin-top: 2.4rem;
+}
+
+/* Card Button */
+.card .btn {
+    margin: 3.6rem auto 0;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .card {
+        grid-template-columns:   repeat(2, 1fr);
+        grid-template-rows:      repeat(3, min-content);
+        height:                  31.6rem;
+        max-width:               68.9rem;
+        padding:                 4.8rem;
+        text-align:              left;
+        width:                   100%;
+    }
+
+    /* Card Blue */
+    .card--blue {
+        background-size: 127%;
+        background-position: -31.5rem;
+    }
+
+    /* Card Content */
+    .card__heading {
+        margin: 0 0 1rem 0;
+    }
+
+    /* Card Price Container */
+    .card__price-container {
+        grid-column: 1;
+        margin: 0;
+    }
+
+    .card__price {
+        margin: 0;
+    }
+
+    .card__billing-cycle {
+        margin-top: 1.2rem;
+    }
+
+    /* Card Benefits */
+    .card__benefits {
+        margin: 0 0 0 5.5rem;
+        position: relative;
+        top: 1rem;
+    }
+
+    /* Card Button */
+    .card .btn {
+        margin: 2.2rem 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card {
+        max-width: 35rem;
+    }
+
+    .card__heading {
+        margin-top: 3.9rem;
+    }
+
+    .card__price {
+        margin-top: 3.5rem;
+    }
+
+    .card__billing-cycle {
+        margin-top: 1.4rem;
+    }
 }
