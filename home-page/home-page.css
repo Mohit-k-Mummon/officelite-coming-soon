@@ -52,10 +52,11 @@ ul {
     MAIN
 *****************/
 body {
-    padding:             4.6rem 2.4rem;
+    padding: 4.6rem 0 0 0;
     font-family:         'Kumbh Sans', sans-serif;
     position:            relative;
     overflow-x:          hidden;
+    background-color:    #fafafa;
 }
 
 .container {
@@ -65,7 +66,7 @@ body {
 
 @media screen and (min-width: 768px) {
     body {
-        padding: 7.2rem 3.9rem;
+        padding: 7.2rem 0 0 0;
     }
 
     .container {
@@ -75,12 +76,60 @@ body {
 
 @media screen and (min-width: 1440px) {
     body {
-        padding: 8.1rem 16.5rem 0;
+        padding: 8.1rem 0 0 0;
+
     }
     
     .container {
         max-width: 111rem;
         margin: 0 auto;
+    }
+}
+
+
+
+
+/**************** 
+    LOGO + BG PATTERN
+*****************/
+.block {
+    padding:        0 2.4rem;
+    height:         min-content;
+}
+
+.block--dark {
+    height:              100%;
+    padding:             4.6rem 2.4rem;
+    background-color:    var(--dark-grey);
+    margin-top:          89rem;
+    background-image:    url(../assets/home/bg-pattern-footer.svg);
+    background-position: top 35% center;
+    background-repeat:   no-repeat;
+    background-size:     315%;
+}
+
+@media screen and (min-width: 768px) {
+    .block, .block--dark {
+        padding: 0 3.9rem;
+    }
+
+    .block--dark {
+        margin-top: 63.9rem;
+        background-size: 190%;
+        background-position: top -2% center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .block, .block--dark {
+        padding: 0 16.5rem 0;
+    }
+
+    .block--dark {
+        margin-top: 40rem;
+        min-height: 85.7rem;
+        background-size: 136%;
+        background-position: -67.5rem -58.5rem;
     }
 }
 
@@ -97,12 +146,13 @@ body {
 }
 
 .bg-pattern {
-    position:    fixed;
+    position:    absolute;
     height:      45.8rem;
     width:       45.8rem;
     top:         6rem;  
     left:        50%; 
     transform:   translate(-50%, -50%);
+    z-index:     -10;
 }
 
 .bg-pattern__img {
@@ -243,6 +293,40 @@ body {
 
 
 
+/**************** 
+    PLANS
+*****************/
+.plans {
+    position: relative;
+    bottom: 84rem;
+}
+.plans-container {
+    height: min-content;
+    display: grid;
+    gap: 3.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .plans {
+        bottom: 50rem;
+    }
+    .plans-container {
+        gap: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .plans {
+        bottom: 25rem;
+    }
+    .plans-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
 
 
 /**************** 
@@ -304,12 +388,19 @@ body {
 *****************/
 .card {
     border-radius:   10px;
+    cursor:          pointer;
     display:         grid;
     grid-auto-rows:  min-content;
     height:          50.8rem;
     margin:          0 auto;
+    width:           100%;
     max-width:       32.7rem;
     text-align:      center;
+    transition:      all ease-out 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card--white {
@@ -323,7 +414,6 @@ body {
     background-position:     top 102% center;
     background-repeat:       no-repeat;
     background-size:         265%;
-    z-index:                 -10;
 }
 
 .card.card--blue .card__heading,
