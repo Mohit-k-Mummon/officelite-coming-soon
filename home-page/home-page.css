@@ -3,14 +3,14 @@
 *****************/
     :root {
         /* Colors */
-        --blue: #5175ff;
-        --light-blue: #829cff;
-        --btn-light-blue: #e4eaff;
+        --blue:                  #5175ff;
+        --light-blue:            #829cff;
+        --btn-light-blue:        #e4eaff;
         --btn-darker-light-blue: #d3dcff;
-        --grey: #747b95;
-        --medium-grey: #333950;
-        --dark-grey: #25293a;
-        --red: #f05b5b;
+        --grey:                  #747b95;
+        --medium-grey:           #333950;
+        --dark-grey:             #25293a;
+        --red:                   #f05b5b;
     }
 
 
@@ -23,9 +23,9 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing:  border-box;
+    margin:      0;
+    padding:     0;
 }
 
 html {
@@ -52,14 +52,14 @@ ul {
     MAIN
 *****************/
 body {
-    padding: 4.6rem 2.4rem;
-    font-family: 'Kumbh Sans', sans-serif;
-    position: relative;
-    overflow-x: hidden;
+    padding:             4.6rem 2.4rem;
+    font-family:         'Kumbh Sans', sans-serif;
+    position:            relative;
+    overflow-x:          hidden;
 }
 
 .container {
-    max-width: 111rem;
+    max-width: 57.5rem;
     margin: 0 auto;
 }
 
@@ -91,18 +91,18 @@ body {
     LOGO + BG PATTERN
 *****************/
 .logo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    display:             flex;
+    justify-content:     center;
+    width:               100%;
 }
 
 .bg-pattern {
-    position: fixed;
-    height: 45.8rem;
-    width: 45.8rem;
-    top: 6rem;  
-    left: 50%; 
-    transform: translate(-50%, -50%);
+    position:    fixed;
+    height:      45.8rem;
+    width:       45.8rem;
+    top:         6rem;  
+    left:        50%; 
+    transform:   translate(-50%, -50%);
 }
 
 .bg-pattern__img {
@@ -115,19 +115,20 @@ body {
     }
 
     .bg-pattern {
-        height: 66.6rem;
-        width: 66.6rem;
-        top: 17rem;
-        left: 92%;
-        right: 0;
+        height:  66.6rem;
+        width:   66.6rem;
+        top:     17rem;
+        left:    92%;
+        right:   0;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .bg-pattern {
-        height: 113.4rem;
-        width: 113.4rem;
-        left: 85%;
+        height:  113.4rem;
+        width:   113.4rem;
+        top:     14rem;
+        left:    85%;
     }
 }
 
@@ -138,16 +139,17 @@ body {
     HERO
 *****************/
 .hero {
-    display: flex;
-    flex-direction: column;
-    gap: 3.2rem;
+    display:         flex;
+    flex-direction:  column;
+    gap:             3.2rem;
+    margin-top:      8.2rem;
 }
 
 /* Img */
 .hero__img-container {
-    width: 100%;
-    height: min-content;
-    display: flex;
+    width:           100%;
+    height:          min-content;
+    display:         flex;
     justify-content: center;
 }
 
@@ -164,30 +166,31 @@ body {
 }
 
 .hero__heading {
-    font-size: 4rem;
-    color: var(--medium-grey);
-    line-height: 1.2;
+    font-size:       4rem;
+    color:           var(--medium-grey);
+    line-height:     1.2;
 }
 
 .hero__tagline {
-    margin-top: 2.5rem;
-    font-size: 1.6rem;
-    color: var(--grey);
-    line-height: 1.6;
+    margin-top:      2.5rem;
+    font-size:       1.6rem;
+    color:           var(--grey);
+    line-height:     1.6;
 }
 
 /* Button */
 .hero .btn {
-    margin: 0 auto;
-    margin-top: 3rem;
-    box-shadow: 0px 24px 21px -3px rgba(2, 9, 142, 0.181);
+    margin:         0 auto;
+    margin-top:     3rem;
+    box-shadow:     0px 24px 21px -3px rgba(2, 9, 142, 0.181);
 }
 
 
 @media screen and (min-width: 768px) {
     .hero {
-        flex-direction: row-reverse;
-        align-items: center;
+        flex-direction:  row-reverse;
+        align-items:     center;
+        margin-top:      10rem;
     }
 
     .hero__heading-container {
@@ -195,10 +198,10 @@ body {
     }
     
     .hero__img-container {
-        width: min-content;
-        position: relative;
-        left: 1.3rem;
-        top: 2.2rem;
+        width:           min-content;
+        position:        relative;
+        left:            1.3rem;
+        top:             2.2rem;
     }
 
     .hero__img {
@@ -211,25 +214,28 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+    .hero {
+        margin-top:      5.6rem;
+    }
     .hero__heading {
-        font-size: 5.6rem;
-        line-height: 1.2;
-        letter-spacing: 0.1px;
+        font-size:       5.6rem;
+        line-height:     1.2;
+        letter-spacing:  0.1px;
     }
 
     .hero__tagline {
-        font-size: 1.8rem;
+        font-size:       1.8rem;
     }
 
     .hero__img-container {
-        width: min-content;
-        position: relative;
-        left: 2.7rem;
-        top: 3.8rem;
+        width:           min-content;
+        position:        relative;
+        left:            2.7rem;
+        top:             3.8rem;
     }
 
     .hero__img {
-        width: 52.9rem;
+        width:           52.9rem;
     }
 }
 
@@ -278,8 +284,8 @@ body {
 }
 
 .btn--tertiary {
-    background-color: #fff;
-    color: var(--blue);
+    background-color:    #fff;
+    color:               var(--blue);
 }
 
 .btn--tertiary:hover {
