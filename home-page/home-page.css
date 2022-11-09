@@ -67,10 +67,21 @@ body {
     body {
         padding: 7.2rem 3.9rem;
     }
+
+    .container {
+        max-width: 68.9rem;
+    }
 }
 
 @media screen and (min-width: 1440px) {
-    body {padding: 8.1rem 16.5rem 0;}
+    body {
+        padding: 8.1rem 16.5rem 0;
+    }
+    
+    .container {
+        max-width: 111rem;
+        margin: 0 auto;
+    }
 }
 
 
@@ -117,6 +128,108 @@ body {
         height: 113.4rem;
         width: 113.4rem;
         left: 85%;
+    }
+}
+
+
+
+
+/**************** 
+    HERO
+*****************/
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+/* Img */
+.hero__img-container {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__img {
+    width: 19.1rem;
+    height: auto;
+
+}
+
+/* Heading */
+.hero__heading-container {
+    width: 100%;
+    text-align: center;
+}
+
+.hero__heading {
+    font-size: 4rem;
+    color: var(--medium-grey);
+    line-height: 1.2;
+}
+
+.hero__tagline {
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    color: var(--grey);
+    line-height: 1.6;
+}
+
+/* Button */
+.hero .btn {
+    margin: 0 auto;
+    margin-top: 3rem;
+    box-shadow: 0px 24px 21px -3px rgba(2, 9, 142, 0.181);
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .hero__heading-container {
+        text-align: left;
+    }
+    
+    .hero__img-container {
+        width: min-content;
+        position: relative;
+        left: 1.3rem;
+        top: 2.2rem;
+    }
+
+    .hero__img {
+        width: 31.3rem;
+    }
+
+    .hero .btn {
+        margin: 3rem 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero__heading {
+        font-size: 5.6rem;
+        line-height: 1.2;
+        letter-spacing: 0.1px;
+    }
+
+    .hero__tagline {
+        font-size: 1.8rem;
+    }
+
+    .hero__img-container {
+        width: min-content;
+        position: relative;
+        left: 2.7rem;
+        top: 3.8rem;
+    }
+
+    .hero__img {
+        width: 52.9rem;
     }
 }
 
