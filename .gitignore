@@ -17,3 +17,8 @@
 .prettierignore
 
 *.md
+
+/node_modules
+/.parcel-cache
+/package-lock.json
+home-page/dist
