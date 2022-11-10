@@ -103,9 +103,9 @@ body {
     background-color:    var(--dark-grey);
     margin-top:          89rem;
     background-image:    url(../assets/home/bg-pattern-footer.svg);
-    background-position: top 35% center;
+    background-position: top 17rem center;
     background-repeat:   no-repeat;
-    background-size:     315%;
+    background-size:     118rem;
     position:            relative;
 }
 
@@ -116,8 +116,8 @@ body {
 
     .block--dark {
         margin-top: 63.9rem;
-        background-size: 190%;
-        background-position: top -2% center;
+        background-size: 145rem;
+        background-position: top 1.8rem center;
         height: 98.6rem;
     }
 }
@@ -130,9 +130,10 @@ body {
     .block--dark {
         margin-top: 40rem;
         /* min-height: 85.7rem; */
-        background-size: 136%;
-        background-position: -67.5rem -58.5rem;
+        background-size: 200rem;
+        background-position: -68.7rem -59rem;
         height: 60.3rem;
+        position: relative;
     }
 }
 
@@ -333,6 +334,10 @@ body {
 *****************/
 .coming-soon {
     text-align: center;
+    position: absolute;
+    bottom: -2.6rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .countdown {
@@ -343,7 +348,8 @@ body {
     text-transform:      uppercase;
     font-size:           1.6rem;
     letter-spacing:      5px;
-    font-weight:         800;
+    font-weight:         700;
+    color:               #fff;
 }
 
 .countdown__heading #date {
@@ -385,6 +391,12 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    .coming-soon {
+        bottom: -3.8rem;
+    }
+    .countdown__heading {
+        font-weight: 800;
+    }
     .countdown__container {
         margin-top: 2.4rem;
     }
@@ -413,14 +425,22 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        bottom: 0.9rem;
     }
 
     .countdown {
         text-align: left;
     }
 
+    .countdown__container {
+        margin-top: 1.6rem;
+    }
+
     .coming-soon .btn {
         margin: 0;
+        position: relative;
+        bottom: 0.6rem;
     }
 }
 
@@ -487,7 +507,7 @@ body {
     CARD
 *****************/
 .card {
-    border-radius:   10px;
+    border-radius:   15px;
     cursor:          pointer;
     display:         grid;
     grid-auto-rows:  min-content;
