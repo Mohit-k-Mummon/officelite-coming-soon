@@ -1,0 +1,23 @@
+{
+  "name": "officelite-coming-soon",
+  "version": "1.0.0",
+  "description": "![Design preview for the Officelite coming soon site coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohit-k-Mummon/officelite-coming-soon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohit-k-Mummon/officelite-coming-soon/issues"
+  },
+  "homepage": "https://github.com/Mohit-k-Mummon/officelite-coming-soon#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
