@@ -328,6 +328,105 @@ body {
 
 
 
+/**************** 
+    COMING SOON
+*****************/
+.coming-soon {
+    text-align: center;
+}
+
+.countdown {
+    text-align: center;
+}
+
+.countdown__heading {
+    text-transform:      uppercase;
+    font-size:           1.6rem;
+    letter-spacing:      5px;
+    font-weight:         800;
+}
+
+.countdown__heading #date {
+    color: var(--blue);
+}
+
+.countdown__container {
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+.countdown-box {
+    align-items:         center;
+    background-color:    var(--medium-grey);
+    border-radius:       10px;
+    display:             flex;
+    flex-direction:      column;
+    gap:                 0.4rem;
+    height:              9.2rem;
+    justify-content:     center;
+    width:               7.2rem;
+}
+
+.numbers {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.time {
+    color: rgba(255, 255, 255, 0.555);
+    font-size: 1.2rem;
+}
+
+.coming-soon .btn {
+    margin: 4rem auto 0;
+}
+
+@media screen and (min-width: 768px) {
+    .countdown__container {
+        margin-top: 2.4rem;
+    }
+
+    .countdown-box {
+        height: 12.8rem;
+        width: 10rem;
+    }
+
+    .numbers {
+        font-size: 5.6rem;
+    }
+
+    .time {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .coming-soon .btn {
+        margin-top: 4.6rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .coming-soon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .countdown {
+        text-align: left;
+    }
+
+    .coming-soon .btn {
+        margin: 0;
+    }
+}
+
+
+
+
 
 
 /**************** 
