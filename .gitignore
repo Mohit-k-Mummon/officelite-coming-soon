@@ -22,3 +22,4 @@
 /.parcel-cache
 /package-lock.json
 home-page/dist
+/dist
