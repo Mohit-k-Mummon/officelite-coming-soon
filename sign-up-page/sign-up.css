@@ -1,0 +1,366 @@
+/**************** 
+    VARIABLES
+*****************/
+:root {
+    /* Colors */
+    --blue:                  #5175ff;
+    --light-blue:            #829cff;
+    --btn-light-blue:        #e4eaff;
+    --btn-darker-light-blue: #d3dcff;
+    --grey:                  #747b95;
+    --medium-grey:           #333950;
+    --dark-grey:             #25293a;
+    --red:                   #f05b5b;
+}
+
+
+
+
+
+/**************** 
+RESET
+*****************/
+*,
+*::before,
+*::after {
+box-sizing:  border-box;
+margin:      0;
+padding:     0;
+}
+
+html {
+font-size: 62.5%;
+}
+
+h1, h2, h3, h4 {
+margin: 0;
+}
+
+a {
+text-decoration: none;
+}
+
+ul {
+list-style: none;
+}
+
+
+
+
+
+/**************** 
+MAIN
+*****************/
+body {
+font-family:         'Kumbh Sans', sans-serif;
+position:            relative;
+overflow-x:          hidden;
+background-color:    #fafafa;
+}
+
+.site-wrapper {
+position: relative;
+overflow-x: hidden;
+padding: 4.6rem 0 0 0;
+}
+
+.container {
+max-width: 57.5rem;
+margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+.site-wrapper {
+    padding: 7.2rem 0 0 0;
+}
+
+.container {
+    max-width: 68.9rem;
+}
+}
+
+@media screen and (min-width: 1440px) {
+.site-wrapper {
+    padding: 8.1rem 0 0 0;
+
+}
+
+.container {
+    max-width: 111rem;
+    margin: 0 auto;
+}
+}
+
+
+
+
+/**************** 
+LOGO + BG PATTERN
+*****************/
+.block {
+padding:        0 2.4rem;
+height:         min-content;
+}
+
+.block--dark {
+height:              124.8rem;
+padding:             4.6rem 2.4rem;
+background-color:    var(--dark-grey);
+margin-top:          89rem;
+background-image:    url(../assets/home/bg-pattern-footer.svg);
+background-position: top 17rem center;
+background-repeat:   no-repeat;
+background-size:     118rem;
+position:            relative;
+}
+
+@media screen and (min-width: 768px) {
+.block, .block--dark {
+    padding: 0 3.9rem;
+}
+
+.block--dark {
+    margin-top: 63.9rem;
+    background-size: 145rem;
+    background-position: top 1.8rem center;
+    height: 98.6rem;
+}
+}
+
+@media screen and (min-width: 1440px) {
+.block, .block--dark {
+    padding: 0 16.5rem 0;
+}
+
+.block--dark {
+    margin-top: 40rem;
+    /* min-height: 85.7rem; */
+    background-size: 200rem;
+    background-position: -68.7rem -59rem;
+    height: 60.3rem;
+    position: relative;
+}
+}
+
+
+
+
+/**************** 
+LOGO + BG PATTERN
+*****************/
+.logo {
+display:             flex;
+justify-content:     center;
+width:               100%;
+}
+
+.bg-pattern {
+position:    absolute;
+height:      45.8rem;
+width:       45.8rem;
+top:         6rem;  
+left:        50%; 
+transform:   translate(-50%, -50%);
+z-index:     -10;
+}
+
+.bg-pattern__img {
+width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+.logo {
+    justify-content: start;
+}
+
+.bg-pattern {
+    height:  66.6rem;
+    width:   66.6rem;
+    top:     17rem;
+    left:    95%;
+    right:   0;
+}
+}
+
+@media screen and (min-width: 1440px) {
+.bg-pattern {
+    height:  113.4rem;
+    width:   113.4rem;
+    top:     14rem;
+    left:    85%;
+}
+}
+
+
+
+/**************** 
+COMING SOON
+*****************/
+.coming-soon {
+text-align: center;
+position: absolute;
+bottom: -2.6rem;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.countdown {
+text-align: center;
+}
+
+.countdown__heading {
+text-transform:      uppercase;
+font-size:           1.6rem;
+letter-spacing:      5px;
+font-weight:         700;
+color:               #fff;
+}
+
+.countdown__heading #date {
+color: var(--blue);
+}
+
+.countdown__container {
+display: flex;
+gap: 1.3rem;
+justify-content: center;
+margin-top: 3.5rem;
+}
+
+.countdown-box {
+align-items:         center;
+background-color:    var(--medium-grey);
+border-radius:       10px;
+display:             flex;
+flex-direction:      column;
+gap:                 0.4rem;
+height:              9.2rem;
+justify-content:     center;
+width:               7.2rem;
+}
+
+.numbers {
+color: #fff;
+font-size: 3.2rem;
+font-weight: 600;
+}
+
+.time {
+color: rgba(255, 255, 255, 0.555);
+font-size: 1.2rem;
+}
+
+.coming-soon .btn {
+margin: 4rem auto 0;
+}
+
+@media screen and (min-width: 768px) {
+.coming-soon {
+    bottom: -3.8rem;
+}
+.countdown__heading {
+    font-weight: 800;
+}
+.countdown__container {
+    margin-top: 2.4rem;
+}
+
+.countdown-box {
+    height: 12.8rem;
+    width: 10rem;
+}
+
+.numbers {
+    font-size: 5.6rem;
+}
+
+.time {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.coming-soon .btn {
+    margin-top: 4.6rem;
+}
+}
+
+@media screen and (min-width: 1440px) {
+.coming-soon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    bottom: 0.9rem;
+}
+
+.countdown {
+    text-align: left;
+}
+
+.countdown__container {
+    margin-top: 1.6rem;
+}
+
+.coming-soon .btn {
+    margin: 0;
+    position: relative;
+    bottom: 0.6rem;
+}
+}
+
+
+
+
+
+
+/**************** 
+BUTTONS
+*****************/
+.btn {
+border-radius:  30px;
+border:         none;
+cursor:         pointer;
+display:        block;
+font-family:    inherit;
+font-size:      1.6rem;
+font-weight:    700;
+outline:        none;
+padding:        1.8rem;
+text-align:     center;
+transition:     all 0.3s;
+white-space:    nowrap;
+width:          17.1rem;
+min-width:      17.1rem;
+}
+
+.btn--primary {
+background-color: var(--blue);
+color: #fff;
+}
+
+.btn--primary:hover {
+background-color: var(--light-blue);
+}
+
+.btn--secondary {
+background-color: var(--btn-light-blue);
+color: var(--blue);
+}
+
+.btn--secondary:hover {
+background-color: var(--btn-darker-light-blue);
+}
+
+.btn--tertiary {
+background-color:    #fff;
+color:               var(--blue);
+}
+
+.btn--tertiary:hover {
+color: var(--light-blue);
+}
+
+.btn--stretched {
+width: 100%;
+}
+
