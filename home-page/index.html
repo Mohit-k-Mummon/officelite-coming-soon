@@ -24,102 +24,110 @@
 		<title>Frontend Mentor | Officelite coming soon site</title>
 	</head>
 	<body>
-		<section class="block header">
-			<div class="logo container">
-				<img class="logo__img" src="../assets/shared/logo.svg" alt="Officelite" />
-			</div>
-			<div class="bg-pattern">
-				<img class="bg-pattern__img" src="../assets/home/bg-pattern-header.svg" alt="" />
-			</div>
-		</section>
-		<section class="block hero-block">
-			<div class="hero container">
-				<div class="hero__img-container">
+		<main class="site-wrapper">
+			<section class="block header">
+				<div class="logo container">
+					<img class="logo__img" src="../assets/shared/logo.svg" alt="Officelite" />
+				</div>
+				<div class="bg-pattern">
 					<img
-						class="hero__img"
-						src="../assets/home/illustration-charts.svg"
-						alt="illustration charts"
+						class="bg-pattern__img"
+						src="../assets/home/bg-pattern-header.svg"
+						alt=""
 					/>
 				</div>
-				<div class="hero__heading-container">
-					<h1 class="hero__heading">A simple solution to complex tasks is coming soon</h1>
-					<p class="hero__tagline">
-						Say goodbye to inefficient juggling of multiple apps, teams, and projects.
-						Officelite is the new collaboration platform built with an intuitive
-						interface to improve productivity.
-					</p>
-					<button class="btn btn--primary">Get Started</button>
-				</div>
-			</div>
-		</section>
-		<section class="block block--dark">
-			<section class="plans container">
-				<div class="plans-container">
-					<div class="card card--white">
-						<h1 class="card__heading">Basic</h1>
-						<div class="card__price-container">
-							<div class="card__price">Free</div>
-							<div class="card__billing-cycle">Up to 5 users for free</div>
-						</div>
-						<ul class="card__benefits">
-							<li>Basic document collaboration</li>
-							<li>2 GB storage</li>
-							<li>Great security and support</li>
-						</ul>
-						<button class="btn btn--secondary">Try for Free</button>
+			</section>
+			<section class="block hero-block">
+				<div class="hero container">
+					<div class="hero__img-container">
+						<img
+							class="hero__img"
+							src="../assets/home/illustration-charts.svg"
+							alt="illustration charts"
+						/>
 					</div>
-					<div class="card card--blue">
-						<h1 class="card__heading">Pro</h1>
-						<div class="card__price-container">
-							<div class="card__price">$9.99</div>
-							<div class="card__billing-cycle">Per user, billed monthly</div>
-						</div>
-						<ul class="card__benefits">
-							<li>All essential integrations</li>
-							<li>50 GB storage</li>
-							<li>More control and insights</li>
-						</ul>
-						<button class="btn btn--tertiary">Try for Free</button>
-					</div>
-					<div class="card card--white">
-						<h1 class="card__heading">Ultimate</h1>
-						<div class="card__price-container">
-							<div class="card__price">$19.99</div>
-							<div class="card__billing-cycle">Per user, billed monthly</div>
-						</div>
-						<ul class="card__benefits">
-							<li>Robust work management</li>
-							<li>100 GB storage</li>
-							<li>VIP support</li>
-						</ul>
-						<button class="btn btn--secondary">Try for Free</button>
+					<div class="hero__heading-container">
+						<h1 class="hero__heading">
+							A simple solution to complex tasks is coming soon
+						</h1>
+						<p class="hero__tagline">
+							Say goodbye to inefficient juggling of multiple apps, teams, and
+							projects. Officelite is the new collaboration platform built with an
+							intuitive interface to improve productivity.
+						</p>
+						<button class="btn btn--primary">Get Started</button>
 					</div>
 				</div>
 			</section>
-			<div class="coming-soon container">
-				<div class="countdown">
-					<h1 class="countdown__heading">coming <span id="date">4 Nov 2020</span></h1>
-					<div class="countdown__container">
-						<div class="countdown-box">
-							<p id="days" class="numbers">47</p>
-							<p class="time">days</p>
+			<section class="block block--dark">
+				<section class="plans container">
+					<div class="plans-container">
+						<div class="card card--white">
+							<h1 class="card__heading">Basic</h1>
+							<div class="card__price-container">
+								<div class="card__price">Free</div>
+								<div class="card__billing-cycle">Up to 5 users for free</div>
+							</div>
+							<ul class="card__benefits">
+								<li>Basic document collaboration</li>
+								<li>2 GB storage</li>
+								<li>Great security and support</li>
+							</ul>
+							<button class="btn btn--secondary">Try for Free</button>
 						</div>
-						<div class="countdown-box">
-							<p id="hours" class="numbers">07</p>
-							<p class="time">hours</p>
+						<div class="card card--blue">
+							<h1 class="card__heading">Pro</h1>
+							<div class="card__price-container">
+								<div class="card__price">$9.99</div>
+								<div class="card__billing-cycle">Per user, billed monthly</div>
+							</div>
+							<ul class="card__benefits">
+								<li>All essential integrations</li>
+								<li>50 GB storage</li>
+								<li>More control and insights</li>
+							</ul>
+							<button class="btn btn--tertiary">Try for Free</button>
 						</div>
-						<div class="countdown-box">
-							<p id="mins" class="numbers">56</p>
-							<p class="time">min</p>
-						</div>
-						<div class="countdown-box">
-							<p id="secs" class="numbers">14</p>
-							<p class="time">sec</p>
+						<div class="card card--white">
+							<h1 class="card__heading">Ultimate</h1>
+							<div class="card__price-container">
+								<div class="card__price">$19.99</div>
+								<div class="card__billing-cycle">Per user, billed monthly</div>
+							</div>
+							<ul class="card__benefits">
+								<li>Robust work management</li>
+								<li>100 GB storage</li>
+								<li>VIP support</li>
+							</ul>
+							<button class="btn btn--secondary">Try for Free</button>
 						</div>
 					</div>
+				</section>
+				<div class="coming-soon container">
+					<div class="countdown">
+						<h1 class="countdown__heading">coming <span id="date">4 Nov 2020</span></h1>
+						<div class="countdown__container">
+							<div class="countdown-box">
+								<p id="days" class="numbers">47</p>
+								<p class="time">days</p>
+							</div>
+							<div class="countdown-box">
+								<p id="hours" class="numbers">07</p>
+								<p class="time">hours</p>
+							</div>
+							<div class="countdown-box">
+								<p id="mins" class="numbers">56</p>
+								<p class="time">min</p>
+							</div>
+							<div class="countdown-box">
+								<p id="secs" class="numbers">14</p>
+								<p class="time">sec</p>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn btn--primary">Get Started</a>
 				</div>
-				<a href="#" class="btn btn--primary">Get Started</a>
-			</div>
-		</section>
+			</section>
+		</main>
 	</body>
 </html>
