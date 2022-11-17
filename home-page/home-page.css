@@ -49,14 +49,19 @@ ul {
 
 
 /**************** 
-    MAIN
+MAIN
 *****************/
 body {
     padding: 4.6rem 0 0 0;
     font-family:         'Kumbh Sans', sans-serif;
-    position:            relative;
     overflow-x:          hidden;
     background-color:    #fafafa;
+    position:            relative;
+}
+
+.header {
+    overflow-x: hidden;
+    position: relative;
 }
 
 .container {
@@ -68,7 +73,7 @@ body {
     body {
         padding: 7.2rem 0 0 0;
     }
-
+    
     .container {
         max-width: 68.9rem;
     }
@@ -77,7 +82,7 @@ body {
 @media screen and (min-width: 1440px) {
     body {
         padding: 8.1rem 0 0 0;
-
+        
     }
     
     .container {
@@ -90,7 +95,7 @@ body {
 
 
 /**************** 
-    LOGO + BG PATTERN
+LOGO + BG PATTERN
 *****************/
 .block {
     padding:        0 2.4rem;
@@ -113,7 +118,7 @@ body {
     .block, .block--dark {
         padding: 0 3.9rem;
     }
-
+    
     .block--dark {
         margin-top: 63.9rem;
         background-size: 145rem;
@@ -153,8 +158,8 @@ body {
     position:    absolute;
     height:      45.8rem;
     width:       45.8rem;
-    top:         6rem;  
-    left:        50%; 
+    top:         6rem;   
+    left:        180px;
     transform:   translate(-50%, -50%);
     z-index:     -10;
 }
