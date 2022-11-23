@@ -77,7 +77,102 @@
 					/>
 				</div>
 			</section>
-			<section class="block block--dark"></section>
+			<section class="block block--dark">
+				<div class="sign-up container">
+					<form action="/" class="form">
+						<ul class="form__list">
+							<li class="list__item">
+								<input type="text" placeholder="Name" />
+								<img
+									id="cross-1"
+									class="cross"
+									src="../assets/sign-up/icon-cross.svg"
+									alt=""
+								/>
+							</li>
+							<li class="list__item">
+								<input type="email" placeholder="Email Address" />
+								<img
+									id="cross-2"
+									class="cross"
+									src="../assets/sign-up/icon-cross.svg"
+									alt=""
+								/>
+							</li>
+							<li id="drop-down" class="list__item drop-down">
+								<div id="main-select" class="select">
+									<span>Basic Pack</span> <span class="price">Free</span>
+								</div>
+								<img
+									src="../assets/sign-up/icon-arrow-down.svg"
+									alt="icon-check"
+									class="arrow"
+									id="chevron"
+								/>
+							</li>
+							<li class="list__item">
+								<input type="tel" placeholder="Phone Number" />
+								<img
+									id="cross-3"
+									class="cross"
+									src="../assets/sign-up/icon-cross.svg"
+									alt=""
+								/>
+							</li>
+							<li class="list__item">
+								<input type="text" placeholder="Company" />
+								<img
+									id="cross-4"
+									class="cross"
+									src="../assets/sign-up/icon-cross.svg"
+									alt=""
+								/>
+							</li>
+						</ul>
+
+						<!-- Drop Down List -->
+						<ul class="drop-down-container">
+							<li id="free-pack" class="list__item">
+								<div id="basic-select" class="select">
+									<span>Basic Pack</span> <span class="price">&nbsp;Free</span>
+								</div>
+								<img
+									id="free-tick"
+									class="tick"
+									src="../assets/sign-up/icon-check.svg"
+									alt="check"
+								/>
+							</li>
+							<li id="pro-pack" class="list__item">
+								<div id="pro-select" class="select">
+									<span>Pro Pack</span> <span class="price">&nbsp;$9.99</span>
+								</div>
+								<img
+									id="pro-tick"
+									class="tick"
+									src="../assets/sign-up/icon-check.svg"
+									alt="check"
+								/>
+							</li>
+							<li id="ultimate-pack" class="list__item">
+								<div id="ultimate-select" class="select drop-down__select">
+									<span>Ultimate Pack</span>
+									<span class="price">&nbsp;$19.99</span>
+								</div>
+								<img
+									id="ultimate-tick"
+									class="tick"
+									src="../assets/sign-up/icon-check.svg"
+									alt="check"
+								/>
+							</li>
+						</ul>
+					</form>
+					<button id="submit" class="btn btn--primary btn--stretched" type="submit">
+						Get on the list
+					</button>
+				</div>
+			</section>
 		</main>
 	</body>
 </html>

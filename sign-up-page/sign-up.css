@@ -3,13 +3,13 @@
 *****************/
 :root {
     /* Colors */
-    --blue:                  #5175ff;
+    --blue:                  rgb(81, 117, 255);
     --light-blue:            #829cff;
     --btn-light-blue:        #e4eaff;
     --btn-darker-light-blue: #d3dcff;
     --grey:                  #747b95;
     --medium-grey:           #333950;
-    --dark-grey:             #25293a;
+    --dark-grey:             rgb(37, 41, 58);
     --red:                   #f05b5b;
 }
 
@@ -110,7 +110,7 @@ height:         min-content;
 height:              32rem;
 padding:             4.6rem 2.4rem;
 background-color:    var(--dark-grey);
-margin-top:          89rem;
+margin-top:          30rem;
 background-image:    url(../assets/sign-up/bg-pattern-side.svg);
 background-position: top -42rem center;
 background-repeat:   no-repeat;
@@ -124,7 +124,7 @@ position:            relative;
 }
 
 .block--dark {
-    margin-top: 63.9rem;
+    margin-top: 32rem;
     background-size: 144rem;
     background-position: top -52.7rem center;
     height: 38rem;
@@ -135,6 +135,10 @@ position:            relative;
     .block, .block--dark {
         padding: 0 16.5rem 0;
     }
+
+    /* .block.header {
+        margin: 0;
+    } */
 
     .block--dark {
         background-size: 203rem;
@@ -367,6 +371,174 @@ margin: 4rem auto 0;
     bottom: 0.6rem;
 }
 }
+
+
+
+
+
+/**************** 
+    FORM
+*****************/
+.sign-up {
+    background-color: #fff;
+    height: 46.5rem;
+    width: 89%;
+    position: absolute;
+    left: 50%;
+    top: 0.2rem;
+    transform: translate(-50%, -50%);
+    padding: 2.4rem 2rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 23px 28px -6px rgba(0,0,0,0.1);
+    max-width: 32.7rem;
+}
+
+.form {
+    position: relative;
+}
+
+
+.form__list {
+    width: 100%;
+    height: 36.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.65rem;
+}
+
+.list__item input, .select {
+    width: 100%;
+    height: min-content;
+    padding-bottom: 2.2rem;
+    padding-left: 2rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #babecb;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: #111;
+}
+
+::placeholder {
+    color: #babecb;
+}
+
+.select {
+    font-weight: 600;
+}
+
+.select span {
+    color: var(--medium-grey);
+    font-weight: 700;
+}
+
+.price {
+    color: #adb0b9 !important; 
+}
+
+.drop-down {
+    position: relative;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 0.8rem;
+    right: 2.4rem;
+    transform: rotate(0);
+    transition: 0.3s;
+}
+
+.cross {
+    position: absolute;
+    right: 1.6rem;
+}
+
+#cross-1,
+#cross-2,
+#cross-3,
+#cross-4 {
+    visibility: hidden;
+}
+
+
+@media screen and (min-width: 768px) {
+    .sign-up {
+        max-width: 44.5rem;
+        width: 44.5rem;
+        padding: 4.2rem 4.3rem 2rem;
+        height: 50.6rem;
+        
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sign-up {
+        left: 3.2rem;
+        top: 46rem;
+    }
+}
+
+
+
+
+/**************** 
+    DROP DOWN CONTAINER 
+*****************/
+.drop-down-container {
+    background-color: #fff;
+    border: 1px solid #e0e1e4;
+    padding: 2.4rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 19rem;
+    width: 100%;
+    height: 19.8rem;
+    display: none;
+}
+
+.drop-down-container .select {
+    padding-left: 0;
+}
+
+.drop-down-container .list__item {
+    position: relative;
+    cursor: pointer;
+
+}
+
+.drop-down-container .list__item:nth-of-type(2),
+ .drop-down-container .list__item:nth-of-type(3) {
+    padding-top: 1.6rem;
+}
+
+.drop-down__select {
+    border-bottom: none;
+}
+
+.tick {
+    position: absolute;
+}
+
+/* Ticks */
+#free-tick {
+    top: 0.6rem;
+    right: 1rem;
+    visibility: visible;
+}
+
+#pro-tick {
+    top: 2rem;
+    right: 1rem;
+    visibility: hidden;
+}
+
+#ultimate-tick {
+    top: 2rem;
+    right: 1rem;
+    visibility: hidden;
+}
+
 
 
 
