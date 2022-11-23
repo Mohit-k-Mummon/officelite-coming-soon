@@ -406,6 +406,10 @@ margin: 4rem auto 0;
     gap: 2.65rem;
 }
 
+.list__item {
+    position: relative;
+}
+
 .list__item input, .select {
     width: 100%;
     height: min-content;
@@ -449,9 +453,11 @@ margin: 4rem auto 0;
     transition: 0.3s;
 }
 
+
 .cross {
     position: absolute;
-    right: 1.6rem;
+    right: 16px;
+    top: 0;
 }
 
 #cross-1,
@@ -477,6 +483,7 @@ margin: 4rem auto 0;
         left: 3.2rem;
         top: 46rem;
     }
+
 }
 
 
